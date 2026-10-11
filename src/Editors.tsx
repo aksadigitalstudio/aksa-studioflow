@@ -78,7 +78,9 @@ export function EditDialog({
     },
     payment: {
       invoiceId: editor.record?.id || "",
-      amount: editor.record ? totals(editor.record, d.payments).outstanding : 0,
+      amount: editor.kind === "payment" && editor.record
+        ? totals(editor.record, d.payments).outstanding
+        : 0,
       date: today(),
       method: "Bank Transfer",
       reference: "",
