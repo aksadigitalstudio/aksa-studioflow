@@ -341,7 +341,7 @@ export function Brand({ light = false }: { light?: boolean }) {
         A<span>✳</span>
       </span>
       <span>
-        {CONFIG.appName.replace("AKSA ", "")}
+        {CONFIG.appName.replace(CONFIG.agency.name.split(" ")[0] + " ", "")}
         <small>BY {CONFIG.agency.name.toUpperCase()}</small>
       </span>
     </span>

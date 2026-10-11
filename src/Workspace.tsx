@@ -79,10 +79,9 @@ export function Dashboard() {
         </div>
         <div className="banner-art">
           <span>
-            AKSA
-            <br />
-            STUDIO
-            <br />
+            {d.settings.agencyName.toUpperCase().split(" ").map((word, index) => (
+              <span key={index} style={{ display: "block" }}>{word}</span>
+            ))}
             <em>IN FLOW.</em>
           </span>
           <div className="orbit">

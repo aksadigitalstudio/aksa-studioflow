@@ -345,7 +345,7 @@ export default function App() {
     >
       <div className="app-shell">
         <aside className={"sidebar " + (menu ? "open" : "")}>
-          <a href="/" aria-label="StudioFlow home">
+          <a href="/" aria-label={CONFIG.appName + " home"}>
             <Brand light />
           </a>
           <div className="studio-selector">
